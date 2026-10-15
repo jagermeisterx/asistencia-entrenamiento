@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#16324f">
+  <meta name="description" content="Registro de asistencia a entrenamientos — Escuela Alemana Paillaco">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Asistencia · Escuela Alemana Paillaco</title>
+</head>
+<body>
+
+  <!-- ═══════════════════ LOGIN ═══════════════════ -->
+  <section id="v-login" class="vista oculta">
+    <div class="login-contenido">
+      <div class="login-logo">📋</div>
+      <h1 id="login-club">Asistencia</h1>
+      <p class="suave">Registro de asistencia a entrenamientos</p>
+      <form id="form-login" autocomplete="off">
+        <input type="password" id="input-pin" inputmode="numeric" pattern="[0-9A-Za-z]*"
+               placeholder="Código de acceso" maxlength="32" required>
+        <button type="submit" class="btn btn-primario">Entrar</button>
+      </form>
+      <p id="login-error" class="error oculta"></p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ INICIO ═══════════════════ -->
+  <section id="v-inicio" class="vista oculta">
+    <header class="cabecera">
+      <div>
+        <h1 id="inicio-club">Club</h1>
+        <p id="inicio-subtitulo" class="cabecera-sub">Categorías</p>
+      </div>
+      <button id="btn-cerrar-sesion" class="icono-btn" title="Cerrar sesión">⏻</button>
+    </header>
+    <main class="contenido">
+      <div id="demo-banner" class="banner banner-info oculta">
+        Modo demostración: la app no está conectada a Google Sheets todavía.
+        Sigue <strong>SETUP.md</strong> para activarla.
+      </div>
+      <div id="categorias" class="lista-tarjetas"></div>
+    </main>
+  </section>
+
+  <!-- ═══════════════════ PASAR LISTA ═══════════════════ -->
+  <section id="v-lista" class="vista oculta">
+    <header class="cabecera cabecera-lista">
+      <button class="icono-btn" data-ir="#/" title="Volver">‹</button>
+      <div class="cabecera-titulo">
+        <h2 id="lista-titulo">Categoría</h2>
+        <p id="lista-contador" class="contador">0/0</p>
+      </div>
+      <input type="date" id="lista-fecha" class="input-fecha">
+    </header>
+    <div class="herramientas">
+      <input type="search" id="lista-buscar" class="buscador" placeholder="Buscar jugador…">
+      <div class="herramientas-botones">
+        <button id="btn-todos" class="btn btn-suave">✓ Todos</button>
+        <button id="btn-ninguno" class="btn btn-suave">✗ Ninguno</button>
+        <button id="btn-limpiar" class="btn btn-suave">↺ Limpiar</button>
+      </div>
+    </div>
+    <main id="lista-jugadores" class="contenido lista-jugadores"></main>
+    <div class="barra-inferior">
+      <label class="registro-por">
+        <span class="suave">Registrado por</span>
+        <input type="text" id="input-registrador" placeholder="Nombre del entrenador" maxlength="60">
+      </label>
+      <button id="btn-guardar" class="btn btn-primario btn-guardar">Guardar asistencia</button>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ HISTORIAL ═══════════════════ -->
+  <section id="v-historial" class="vista oculta">
+    <header class="cabecera">
+      <button class="icono-btn" data-ir="#/" title="Volver">‹</button>
+      <div class="cabecera-titulo">
+        <h2>Historial</h2>
+        <p class="cabecera-sub">Sesiones registradas</p>
+      </div>
+    </header>
+    <div class="tabs">
+      <button class="tab activa" data-tab="sesiones">Sesiones</button>
+      <button class="tab" data-tab="jugadores">Asistencia %</button>
+    </div>
+    <div id="historial-filtros" class="chips-filtro"></div>
+    <main id="historial-contenido" class="contenido"></main>
+  </section>
+
+  <!-- ═══════════════════ DETALLE DE SESIÓN ═══════════════════ -->
+  <section id="v-detalle" class="vista oculta">
+    <header class="cabecera">
+      <button class="icono-btn" data-ir="#/historial" title="Volver">‹</button>
+      <div class="cabecera-titulo">
+        <h2 id="detalle-titulo">Sesión</h2>
+        <p id="detalle-sub" class="cabecera-sub"></p>
+      </div>
+    </header>
+    <main id="detalle-contenido" class="contenido"></main>
+  </section>
+
+  <!-- ═══════════════════ BANNERS GLOBALES ═══════════════════ -->
+  <div id="banner-cola" class="banner banner-cola oculta">
+    <span id="banner-cola-texto">1 asistencia pendiente de envío</span>
+    <button id="btn-reenviar" class="btn btn-suave">Reenviar</button>
+  </div>
+  <div id="toast" class="toast oculta"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
