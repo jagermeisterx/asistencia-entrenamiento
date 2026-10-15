@@ -105,6 +105,29 @@
     <main id="detalle-contenido" class="contenido"></main>
   </section>
 
+  <!-- ═══════════════════ RESUMEN SEMANAL ═══════════════════ -->
+  <section id="v-semana" class="vista oculta">
+    <header class="cabecera">
+      <button class="icono-btn" data-ir="#/" title="Volver">‹</button>
+      <div class="cabecera-titulo">
+        <h2 id="semana-titulo">Resumen semanal</h2>
+        <p class="cabecera-sub">Para compartir con los padres</p>
+      </div>
+    </header>
+    <div class="semana-nav">
+      <button id="btn-semana-anterior" class="btn btn-suave" title="Semana anterior">‹</button>
+      <span id="semana-rango"></span>
+      <button id="btn-semana-siguiente" class="btn btn-suave" title="Semana siguiente">›</button>
+    </div>
+    <main class="contenido">
+      <div id="semana-preview"></div>
+    </main>
+    <div class="barra-inferior semana-acciones">
+      <button id="btn-compartir-imagen" class="btn btn-primario">📤 Compartir imagen (PNG)</button>
+      <button id="btn-imprimir" class="btn btn-suave">🖨 Imprimir / PDF</button>
+    </div>
+  </section>
+
   <!-- ═══════════════════ BANNERS GLOBALES ═══════════════════ -->
   <div id="banner-cola" class="banner banner-cola oculta">
     <span id="banner-cola-texto">1 asistencia pendiente de envío</span>
@@ -114,6 +137,7 @@
 
   <script src="js/config.js"></script>
   <script src="js/api.js"></script>
+  <script src="js/compartir.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

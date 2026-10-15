@@ -2,13 +2,14 @@
  * sw.js — service worker: la app queda cacheada y abre sin datos.
  * La nómina (data/roster.json) se revalida en cada visita.
  */
-const CACHE = "asistencia-v2";
+const CACHE = "asistencia-v3";
 const PRECACHE = [
   "./",
   "index.html",
   "css/styles.css",
   "js/config.js",
   "js/api.js",
+  "js/compartir.js",
   "js/app.js",
   "data/roster.json",
   "manifest.json",

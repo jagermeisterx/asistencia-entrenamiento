@@ -429,6 +429,119 @@ h1, h2, h3 { line-height: 1.2; }
 }
 @keyframes girar { to { transform: rotate(360deg); } }
 
+/* ────────────────────────────────────────────────── resumen semanal */
+
+.semana-nav {
+  position: sticky;
+  top: calc(64px + env(safe-area-inset-top));
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--tarjeta);
+  border-bottom: 1px solid var(--linea);
+}
+.semana-nav .btn-suave { width: 46px; padding: 9px 0; text-align: center; flex-shrink: 0; }
+.semana-nav .btn-suave:disabled { opacity: .35; }
+.semana-nav span { flex: 1; text-align: center; font-weight: 700; font-size: .92rem; }
+
+.icono-share {
+  font-size: 1.15rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--fondo);
+  display: grid;
+  place-items: center;
+  color: var(--azul-claro);
+  flex-shrink: 0;
+}
+.icono-share:active { background: var(--linea); }
+
+.semana-acciones { flex-direction: column; }
+.semana-acciones .btn-suave { width: 100%; }
+
+.matriz {
+  background: #fff;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+}
+
+.matriz-head {
+  background: linear-gradient(135deg, var(--azul), var(--azul-claro));
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+.matriz-head strong { font-size: 1.05rem; }
+.matriz-head > span { font-size: .8rem; color: #bfdbfe; }
+.matriz-chip {
+  background: rgba(255, 255, 255, .16);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 600;
+  color: #fff !important;
+  font-size: .78rem !important;
+  margin-top: 4px;
+}
+
+.matriz-grid { display: grid; }
+.mh {
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--suave);
+  font-weight: 700;
+  padding: 10px 4px;
+  text-align: center;
+  background: #f1f5f9;
+  border-bottom: 1px solid var(--linea);
+}
+.mh:first-child { text-align: left; padding-left: 14px; }
+.mn {
+  padding: 11px 6px 11px 14px;
+  font-size: .84rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--linea);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mc {
+  text-align: center;
+  font-weight: 800;
+  padding: 11px 4px;
+  border-bottom: 1px solid var(--linea);
+}
+.mc.ok { color: var(--verde); }
+.mc.no { color: var(--rojo); }
+.mc.sin { color: #cbd5e1; }
+.matriz-pie {
+  font-size: .66rem;
+  color: var(--suave);
+  text-align: center;
+  padding: 10px 14px;
+}
+
+/* ────────────────────────────────────────────────── impresión (PDF) */
+
+@media print {
+  body { background: #fff; }
+  body > *:not(#v-semana) { display: none !important; }
+  #v-semana { max-width: none; border: none; min-height: 0; }
+  #v-semana .cabecera, .semana-nav, .semana-acciones, #banner-cola, #toast { display: none !important; }
+  #v-semana .contenido { padding: 0; }
+  .matriz { box-shadow: none; border-radius: 0; }
+  .mh { position: static; }
+  @page { margin: 10mm; }
+}
+
 /* ────────────────────────────────────────────────── pantallas grandes */
 
 @media (min-width: 560px) {

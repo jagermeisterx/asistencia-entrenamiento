@@ -22,6 +22,9 @@
     sucio: false,
     tab: "sesiones",
     filtroCat: "",
+    semanaCat: null,
+    semanaLunesISO: null,
+    semanaModelo: null,
   };
 
   const ICONOS_CAT = { adulto: "🏆", u17: "🥇", u15: "🎯", u13: "🌱" };
@@ -72,7 +75,7 @@
 
   // ───────────────────────────────────────────────────────── enrutador
 
-  const VISTAS = ["v-login", "v-inicio", "v-lista", "v-historial", "v-detalle"];
+  const VISTAS = ["v-login", "v-inicio", "v-lista", "v-historial", "v-detalle", "v-semana"];
 
   function mostrar(id) {
     VISTAS.forEach((v) => $("#" + v).classList.toggle("oculta", v !== id));
@@ -101,6 +104,10 @@
       const [fecha, cat] = ruta.slice(10).split("/").map(decodeURIComponent);
       renderDetalle(fecha, cat);
       return mostrar("v-detalle");
+    }
+    if (ruta.startsWith("#/semana/")) {
+      renderSemana(decodeURIComponent(ruta.slice(9)));
+      return mostrar("v-semana");
     }
     if (ruta === "#/historial") {
       renderHistorial();
@@ -157,15 +164,16 @@
       .map((c) => {
         const entrenador = c.cuerpo_tecnico.find((t) => t.rol === "Entrenador");
         return `
-        <button class="tarjeta-cat" data-cat="${esc(c.id)}">
+        <div class="tarjeta-cat" data-cat="${esc(c.id)}" role="button" tabindex="0">
           <span class="tarjeta-cat-ico">${ICONOS_CAT[c.id] || "⚽"}</span>
           <span class="tarjeta-cat-datos">
             <span class="tarjeta-cat-nombre">${esc(c.nombre)}</span>
             <span class="suave">${esc(c.rango_edades || anio || "")}</span>
             <span class="suave2">${c.jugadores.length} jugadores${entrenador ? " · " + esc(entrenador.nombre) : ""}</span>
           </span>
+          <button class="icono-share" data-semana="${esc(c.id)}" title="Resumen semanal para compartir">📤</button>
           <span class="flecha">›</span>
-        </button>`;
+        </div>`;
       })
       .join("");
   }
@@ -481,6 +489,91 @@
       </div>`;
   }
 
+  // ───────────────────────────────────────────────────────── resumen semanal
+
+  async function renderSemana(catId) {
+    const cat = state.roster.categorias.find((c) => c.id === catId);
+    if (!cat) return navegar("#/");
+
+    if (state.semanaCat !== catId) {
+      state.semanaCat = catId;
+      state.semanaLunesISO = Compartir.lunesDeISO(hoyISO());
+    }
+    const lunes = Compartir.parseISO(state.semanaLunesISO);
+    $("#semana-titulo").textContent = cat.nombre;
+    $("#semana-rango").textContent = "Cargando…";
+    $("#btn-semana-siguiente").disabled = state.semanaLunesISO >= Compartir.lunesDeISO(hoyISO());
+    $("#btn-compartir-imagen").disabled = true;
+    $("#btn-imprimir").disabled = true;
+
+    const cont = $("#semana-preview");
+    cont.innerHTML = `<p class="vacio"><span class="spinner"></span> Cargando historial…</p>`;
+
+    try {
+      const modelo = await Compartir.construir(cat, lunes, state.roster.club);
+      state.semanaModelo = modelo;
+      $("#semana-rango").textContent = modelo.rango;
+      if (modelo.vacio) {
+        cont.innerHTML = `<p class="vacio">Esta semana no hay sesiones registradas en ${esc(cat.nombre)}.<br><span class="suave">Usa ‹ para ver semanas anteriores.</span></p>`;
+        return;
+      }
+      $("#btn-compartir-imagen").disabled = false;
+      $("#btn-imprimir").disabled = false;
+      cont.innerHTML = vistaMatriz(modelo);
+    } catch (err) {
+      state.semanaModelo = null;
+      cont.innerHTML = `<p class="vacio">⚠ No se pudo cargar el historial: ${esc(err.message)}<br><button class="btn btn-suave" id="btn-semana-reintentar">Reintentar</button></p>`;
+      $("#btn-semana-reintentar")?.addEventListener("click", () => renderSemana(catId));
+    }
+  }
+
+  /** Vista previa HTML de la matriz (es además la zona de impresión). */
+  function vistaMatriz(m) {
+    const columnas = `minmax(0,1.4fr) repeat(${m.dias.length}, minmax(44px, 80px))`;
+    const encabezados =
+      `<span class="mh">Jugador</span>` +
+      m.dias.map((d) => `<span class="mh">${esc(d.etiqueta)}</span>`).join("");
+    const filas = m.jugadores
+      .map(
+        (j) =>
+          `<span class="mn">${esc(j.nombre)}</span>` +
+          j.celdas
+            .map((c) => `<span class="mc ${c === 1 ? "ok" : c === 0 ? "no" : "sin"}">${c === 1 ? "✓" : c === 0 ? "✗" : "–"}</span>`)
+            .join("")
+      )
+      .join("");
+    const chip = `${m.jugadores.length} jugadores · ${m.dias.length} sesiones · ${m.pct}% asistencia`;
+    return `
+      <div class="matriz">
+        <div class="matriz-head">
+          <strong>${esc(m.club)}</strong>
+          <span>${esc(m.categoria)} · ${esc(m.rango)}</span>
+          <span class="matriz-chip">${chip}</span>
+        </div>
+        <div class="matriz-grid" style="grid-template-columns:${columnas}">${encabezados}${filas}</div>
+        <p class="matriz-pie">Generado de la app de asistencia · ${esc(m.club)} · ${new Date().toLocaleDateString("es-CL")}</p>
+      </div>`;
+  }
+
+  async function compartirSemana() {
+    const m = state.semanaModelo;
+    if (!m || m.vacio) return;
+    const btn = $("#btn-compartir-imagen");
+    btn.disabled = true;
+    try {
+      const canvas = Compartir.dibujar(m);
+      if (!canvas) return toast("Tu navegador no permite generar imágenes", "error");
+      const resultado = await Compartir.compartirPNG(canvas, Compartir.nombreArchivo(m), `Asistencia ${m.categoria}`);
+      if (resultado === "descargado") {
+        toast("Imagen descargada. Ábrela desde tu galería o archivos para compartirla.", "aviso", 4000);
+      }
+    } catch (err) {
+      toast("No se pudo generar la imagen: " + err.message, "error", 4000);
+    } finally {
+      btn.disabled = false;
+    }
+  }
+
   // ───────────────────────────────────────────────────────── arranque
 
   async function iniciar() {
@@ -490,6 +583,8 @@
     document.body.addEventListener("click", (e) => {
       const ir = e.target.closest("[data-ir]");
       if (ir) return navegar(ir.dataset.ir);
+      const share = e.target.closest("[data-semana]");
+      if (share) return navegar(`#/semana/${encodeURIComponent(share.dataset.semana)}`);
       const tarjeta = e.target.closest(".tarjeta-cat");
       if (tarjeta) return navegar(`#/lista/${encodeURIComponent(tarjeta.dataset.cat)}`);
       const sesion = e.target.closest(".tarjeta-sesion");
@@ -543,6 +638,27 @@
       if (confirm("¿Cerrar sesión?")) {
         localStorage.removeItem(CLAVE_CODE);
         render();
+      }
+    });
+
+    // Resumen semanal (compartir con los padres)
+    $("#btn-semana-anterior").addEventListener("click", () => {
+      state.semanaLunesISO = Compartir.sumarDiasISO(state.semanaLunesISO, -7);
+      renderSemana(state.semanaCat);
+    });
+    $("#btn-semana-siguiente").addEventListener("click", () => {
+      if (state.semanaLunesISO >= Compartir.lunesDeISO(hoyISO())) return;
+      state.semanaLunesISO = Compartir.sumarDiasISO(state.semanaLunesISO, 7);
+      renderSemana(state.semanaCat);
+    });
+    $("#btn-compartir-imagen").addEventListener("click", compartirSemana);
+    $("#btn-imprimir").addEventListener("click", () => window.print());
+
+    // Teclado en las tarjetas del inicio (accesibilidad)
+    document.body.addEventListener("keydown", (e) => {
+      if ((e.key === "Enter" || e.key === " ") && e.target.classList?.contains("tarjeta-cat")) {
+        e.preventDefault();
+        navegar(`#/lista/${encodeURIComponent(e.target.dataset.cat)}`);
       }
     });
 

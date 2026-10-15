@@ -20,7 +20,9 @@ Google.
   lista para esa fecha y categoría, se **reemplaza** (sin duplicados).
 - 📶 **Modo offline:** si no hay señal, la asistencia queda en cola en el
   celular y se envía sola al recuperar conexión.
-- 📊 **Historial:** sesiones registradas y % de asistencia por jugador.
+- 📅 **Resumen semanal** por categoría (matriz jugadores × días) para
+  compartir con los padres como imagen PNG o PDF, desde el celular.
+- 📈 **Historial:** sesiones registradas y % de asistencia por jugador.
 - 🔐 Acceso con PIN (validado en la app y en el servidor).
 - 📲 Instalable en el pantalla de inicio (PWA) y funciona sin datos.
 
@@ -32,6 +34,7 @@ Google.
 ├── js/
 │   ├── config.js           URL del backend + PIN de acceso
 │   ├── api.js              comunicación + cola offline
+│   ├── compartir.js        resumen semanal → imagen PNG / PDF
 │   └── app.js              interfaz y enrutamiento
 ├── data/roster.json        nómina generada desde el Excel
 ├── apps-script/Code.gs     backend de Google Apps Script
