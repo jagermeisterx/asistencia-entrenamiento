@@ -1,0 +1,1099 @@
+{
+  "club": "ESCUELA ALEMANA PAILLACO",
+  "anio": 2026,
+  "generado": "2026-10-15",
+  "fuente": "SAESAA REAL 2026(1).xlsx",
+  "categorias": [
+    {
+      "id": "adulto",
+      "nombre": "Serie Adulto",
+      "rango_edades": "ADU: 1986 a 2002 - U23: 2003 a 2006",
+      "jugadores": [
+        {
+          "n": 1,
+          "apellidos": "FERNANDEZ JARA",
+          "nombres": "SAMUEL ANIBAL",
+          "nombre": "SAMUEL ANIBAL FERNANDEZ JARA",
+          "rut": "21.588.275-6",
+          "rut_normalizado": "215882756",
+          "rut_valido": true,
+          "fecha_nac": "2004-05-27",
+          "clasificacion": "Adulto",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 2,
+          "apellidos": "ABURTO QUEZADA",
+          "nombres": "JAVIER ALEJANDRO",
+          "nombre": "JAVIER ALEJANDRO ABURTO QUEZADA",
+          "rut": "21.473.743-4",
+          "rut_normalizado": "214737434",
+          "rut_valido": true,
+          "fecha_nac": "2003-12-30",
+          "clasificacion": "Adulto",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 3,
+          "apellidos": "RIVAS PAREDES",
+          "nombres": "JOAQUIN IGNACIO",
+          "nombre": "JOAQUIN IGNACIO RIVAS PAREDES",
+          "rut": "20.924.927-8",
+          "rut_normalizado": "209249278",
+          "rut_valido": true,
+          "fecha_nac": "2003-02-08",
+          "clasificacion": "Adulto",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 4,
+          "apellidos": "CORTES SAAVEDRA",
+          "nombres": "MODESTO GUSTAVO",
+          "nombre": "MODESTO GUSTAVO CORTES SAAVEDRA",
+          "rut": "20.924.921-9",
+          "rut_normalizado": "209249219",
+          "rut_valido": true,
+          "fecha_nac": "2003-01-30",
+          "clasificacion": "Adulto",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 5,
+          "apellidos": "TALADRIZ BREVIL",
+          "nombres": "MATIAS RODRIGO",
+          "nombre": "MATIAS RODRIGO TALADRIZ BREVIL",
+          "rut": "21.509.822-2",
+          "rut_normalizado": "215098222",
+          "rut_valido": true,
+          "fecha_nac": "2004-01-21",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 6,
+          "apellidos": "FUENTES GUERRERO",
+          "nombres": "FELIPE ROBERTO",
+          "nombre": "FELIPE ROBERTO FUENTES GUERRERO",
+          "rut": "22.562.357-0",
+          "rut_normalizado": "225623570",
+          "rut_valido": true,
+          "fecha_nac": "2007-11-28",
+          "clasificacion": "U 24",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 7,
+          "apellidos": "",
+          "nombres": "BENJAMIN AUGUSTO",
+          "nombre": "BENJAMIN AUGUSTO",
+          "rut": "21.896.189-4",
+          "rut_normalizado": "218961894",
+          "rut_valido": true,
+          "fecha_nac": "2005-07-28",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": [
+            "Faltan apellidos en el archivo fuente"
+          ]
+        },
+        {
+          "n": 8,
+          "apellidos": "VALDEBENITO VALLADARES",
+          "nombres": "DAVID EDUARDO",
+          "nombre": "DAVID EDUARDO VALDEBENITO VALLADARES",
+          "rut": "21.959.306-6",
+          "rut_normalizado": "219593066",
+          "rut_valido": true,
+          "fecha_nac": "2005-10-18",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 9,
+          "apellidos": "CERON GONZALEZ",
+          "nombres": "JESUS IGNACIO",
+          "nombre": "JESUS IGNACIO CERON GONZALEZ",
+          "rut": "20.641.881-8",
+          "rut_normalizado": "206418818",
+          "rut_valido": true,
+          "fecha_nac": "2001-05-08",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 10,
+          "apellidos": "MUÑOZ REYES",
+          "nombres": "ERWIN JAVIER",
+          "nombre": "ERWIN JAVIER MUÑOZ REYES",
+          "rut": "20.685.216-K",
+          "rut_normalizado": "20685216K",
+          "rut_valido": true,
+          "fecha_nac": "2001-02-22",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 11,
+          "apellidos": "DIAZ SEPULVEDA",
+          "nombres": "MATIAS IGNACIO",
+          "nombre": "MATIAS IGNACIO DIAZ SEPULVEDA",
+          "rut": "22.279.128-6",
+          "rut_normalizado": "222791286",
+          "rut_valido": true,
+          "fecha_nac": "2006-12-09",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 12,
+          "apellidos": "VELASQUEZ CASTRO",
+          "nombres": "LUIS ANTHONY",
+          "nombre": "LUIS ANTHONY VELASQUEZ CASTRO",
+          "rut": "24.610.646-0",
+          "rut_normalizado": "246106460",
+          "rut_valido": true,
+          "fecha_nac": "2006-08-16",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 13,
+          "apellidos": "BARRIA RAMOS",
+          "nombres": "MATIAS SEBASTIAN",
+          "nombre": "MATIAS SEBASTIAN BARRIA RAMOS",
+          "rut": "22.616.090-6",
+          "rut_normalizado": "226160906",
+          "rut_valido": true,
+          "fecha_nac": "2008-01-18",
+          "clasificacion": "",
+          "club": "LAS ANIMAS",
+          "avisos": []
+        },
+        {
+          "n": 14,
+          "apellidos": "CUEVAS OPORTO",
+          "nombres": "EMILIO AGUSTIN",
+          "nombre": "EMILIO AGUSTIN CUEVAS OPORTO",
+          "rut": "22.850.578-1",
+          "rut_normalizado": "228505781",
+          "rut_valido": true,
+          "fecha_nac": "2008-10-21",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 15,
+          "apellidos": "LOZA CARRASCO",
+          "nombres": "VICENTE MARTIN OCTAVIO",
+          "nombre": "VICENTE MARTIN OCTAVIO LOZA CARRASCO",
+          "rut": "22.629.457-0",
+          "rut_normalizado": "226294570",
+          "rut_valido": true,
+          "fecha_nac": "2008-01-26",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 16,
+          "apellidos": "MORENO LIRA",
+          "nombres": "DIEGO ALEJANDRO",
+          "nombre": "DIEGO ALEJANDRO MORENO LIRA",
+          "rut": "22.739.196-0",
+          "rut_normalizado": "227391960",
+          "rut_valido": true,
+          "fecha_nac": "2008-06-02",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 17,
+          "apellidos": "ALEGRIA VEGA",
+          "nombres": "LUKAS SEBASTIAN",
+          "nombre": "LUKAS SEBASTIAN ALEGRIA VEGA",
+          "rut": "23.221.697-2",
+          "rut_normalizado": "232216972",
+          "rut_valido": true,
+          "fecha_nac": "2010-01-06",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 18,
+          "apellidos": "BASCUÑAN SPULER",
+          "nombres": "IGNACIO",
+          "nombre": "IGNACIO BASCUÑAN SPULER",
+          "rut": "23.441.508-5",
+          "rut_normalizado": "234415085",
+          "rut_valido": true,
+          "fecha_nac": "2010-09-28",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 19,
+          "apellidos": "INOSTROZA VARGAS",
+          "nombres": "GUSTAVO JOSE IGNACIO",
+          "nombre": "GUSTAVO JOSE IGNACIO INOSTROZA VARGAS",
+          "rut": "23.468.322-5",
+          "rut_normalizado": "234683225",
+          "rut_valido": true,
+          "fecha_nac": "2010-11-03",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 20,
+          "apellidos": "OJEDA VALERIO",
+          "nombres": "MARCO ANTONIO",
+          "nombre": "MARCO ANTONIO OJEDA VALERIO",
+          "rut": "23.053.431-4",
+          "rut_normalizado": "230534314",
+          "rut_valido": true,
+          "fecha_nac": "2009-04-08",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 21,
+          "apellidos": "AVALOS BARRIENTOS",
+          "nombres": "CRISTIAN ANDRES",
+          "nombre": "CRISTIAN ANDRES AVALOS BARRIENTOS",
+          "rut": "21.446.960-K",
+          "rut_normalizado": "21446960K",
+          "rut_valido": true,
+          "fecha_nac": "2003-11-20",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        }
+      ],
+      "cuerpo_tecnico": [
+        {
+          "rol": "Entrenador",
+          "nombre": "MATIAS EMILIANO CONTRERAS",
+          "rut": "44.516.314-7",
+          "rut_valido": true,
+          "nivel": "2",
+          "nota": ""
+        },
+        {
+          "rol": "Asistente 1",
+          "nombre": "CLAUDIO ANDRES SALAZAR RUIZ",
+          "rut": "13.846.558-6",
+          "rut_valido": true,
+          "nivel": "2",
+          "nota": "REVALIDA 2026"
+        }
+      ]
+    },
+    {
+      "id": "u17",
+      "nombre": "Serie U17",
+      "rango_edades": "Años: 2009 y 2010",
+      "jugadores": [
+        {
+          "n": 1,
+          "apellidos": "JARAMILLO NAEGEL",
+          "nombres": "LUCAS GIOVANNI",
+          "nombre": "LUCAS GIOVANNI JARAMILLO NAEGEL",
+          "rut": "22.964.277-4",
+          "rut_normalizado": "229642774",
+          "rut_valido": true,
+          "fecha_nac": "2009-03-09",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 2,
+          "apellidos": "OJEDA VALERIO",
+          "nombres": "MARCO ANTONIO",
+          "nombre": "MARCO ANTONIO OJEDA VALERIO",
+          "rut": "23.053.431-4",
+          "rut_normalizado": "230534314",
+          "rut_valido": true,
+          "fecha_nac": "2009-04-08",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 3,
+          "apellidos": "LABRA REBOLLEDO",
+          "nombres": "MARTIN FELIPE",
+          "nombre": "MARTIN FELIPE LABRA REBOLLEDO",
+          "rut": "23.083.886-0",
+          "rut_normalizado": "230838860",
+          "rut_valido": true,
+          "fecha_nac": "2009-07-21",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 4,
+          "apellidos": "SANTIBAÑEZ SALAS",
+          "nombres": "CARLOS ALBERTO",
+          "nombre": "CARLOS ALBERTO SANTIBAÑEZ SALAS",
+          "rut": "23.010.199-K",
+          "rut_normalizado": "23010199K",
+          "rut_valido": true,
+          "fecha_nac": "2009-09-04",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 5,
+          "apellidos": "CALBUCURA ESPARZA",
+          "nombres": "ZAMIR IVAN",
+          "nombre": "ZAMIR IVAN CALBUCURA ESPARZA",
+          "rut": "21.190.698-3",
+          "rut_normalizado": "211906983",
+          "rut_valido": false,
+          "fecha_nac": "2009-11-30",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT INVALIDO"
+          ]
+        },
+        {
+          "n": 6,
+          "apellidos": "URIBE CAÑULEF",
+          "nombres": "ALONSO BENJAMIN",
+          "nombre": "ALONSO BENJAMIN URIBE CAÑULEF",
+          "rut": "23.214.333-9",
+          "rut_normalizado": "232143339",
+          "rut_valido": true,
+          "fecha_nac": "2010-01-02",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 7,
+          "apellidos": "PINUER PEÑA",
+          "nombres": "IGNACIO AGUSTIN",
+          "nombre": "IGNACIO AGUSTIN PINUER PEÑA",
+          "rut": "23.274.572-K",
+          "rut_normalizado": "23274572K",
+          "rut_valido": true,
+          "fecha_nac": "2010-02-28",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 8,
+          "apellidos": "LATORRE QUEZADA",
+          "nombres": "ANTONIO EDUARDO",
+          "nombre": "ANTONIO EDUARDO LATORRE QUEZADA",
+          "rut": "23.285.735-8",
+          "rut_normalizado": "232857358",
+          "rut_valido": true,
+          "fecha_nac": "2010-03-31",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 9,
+          "apellidos": "JARA GARCES",
+          "nombres": "MARTIN IGNACIO",
+          "nombre": "MARTIN IGNACIO JARA GARCES",
+          "rut": "23.351.003-3",
+          "rut_normalizado": "233510033",
+          "rut_valido": true,
+          "fecha_nac": "2010-06-16",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 10,
+          "apellidos": "GALLEGO ALBARRAN",
+          "nombres": "ANTONIO",
+          "nombre": "ANTONIO GALLEGO ALBARRAN",
+          "rut": "23.387.667-4",
+          "rut_normalizado": "233876674",
+          "rut_valido": true,
+          "fecha_nac": "2010-07-28",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 11,
+          "apellidos": "BASCUÑAN SPULER",
+          "nombres": "VICENTE IGNACIO",
+          "nombre": "VICENTE IGNACIO BASCUÑAN SPULER",
+          "rut": "23.441.508-5",
+          "rut_normalizado": "234415085",
+          "rut_valido": true,
+          "fecha_nac": "2010-09-28",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 12,
+          "apellidos": "INOSTROZA VARGAS",
+          "nombres": "GUSTAVO JOSE IGNACIO",
+          "nombre": "GUSTAVO JOSE IGNACIO INOSTROZA VARGAS",
+          "rut": "23.468.322-5",
+          "rut_normalizado": "234683225",
+          "rut_valido": true,
+          "fecha_nac": "2010-11-03",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 13,
+          "apellidos": "ROBLES SOTO",
+          "nombres": "ALEJANDRO",
+          "nombre": "ALEJANDRO ROBLES SOTO",
+          "rut": "23.512.243-K",
+          "rut_normalizado": "23512243K",
+          "rut_valido": true,
+          "fecha_nac": "2010-12-02",
+          "clasificacion": "",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 14,
+          "apellidos": "ALEGRIA VEGA",
+          "nombres": "LUKAS SEBASTIAN",
+          "nombre": "LUKAS SEBASTIAN ALEGRIA VEGA",
+          "rut": "23.221.697-2",
+          "rut_normalizado": "232216972",
+          "rut_valido": true,
+          "fecha_nac": "2010-01-06",
+          "clasificacion": "",
+          "club": "",
+          "avisos": []
+        },
+        {
+          "n": 15,
+          "apellidos": "MARIN QUEZADA",
+          "nombres": "PAOLO WLADIMIR",
+          "nombre": "PAOLO WLADIMIR MARIN QUEZADA",
+          "rut": "23.569.513-8",
+          "rut_normalizado": "235695138",
+          "rut_valido": true,
+          "fecha_nac": "2011-02-22",
+          "clasificacion": "",
+          "club": "",
+          "avisos": []
+        },
+        {
+          "n": 16,
+          "apellidos": "ASENCIO PERES",
+          "nombres": "SEBASTIAN ANDRES",
+          "nombre": "SEBASTIAN ANDRES ASENCIO PERES",
+          "rut": "23.562.312-9",
+          "rut_normalizado": "235623129",
+          "rut_valido": true,
+          "fecha_nac": "2011-02-17",
+          "clasificacion": "",
+          "club": "",
+          "avisos": []
+        },
+        {
+          "n": 18,
+          "apellidos": "SOBARZO PAREDES",
+          "nombres": "TOMAS MAXIMILIANO",
+          "nombre": "TOMAS MAXIMILIANO SOBARZO PAREDES",
+          "rut": "23.178.235-4",
+          "rut_normalizado": "231782354",
+          "rut_valido": true,
+          "fecha_nac": "2009-11-18",
+          "clasificacion": "",
+          "club": "",
+          "avisos": []
+        }
+      ],
+      "cuerpo_tecnico": [
+        {
+          "rol": "Entrenador",
+          "nombre": "MATIAS EMILIANO CONTRERAS",
+          "rut": "44.516.314-7",
+          "rut_valido": true,
+          "nivel": "2",
+          "nota": ""
+        },
+        {
+          "rol": "Asistente 1",
+          "nombre": "CLAUDIO ANDRES SALAZAR RUIZ",
+          "rut": "13.846.558-6",
+          "rut_valido": true,
+          "nivel": "2",
+          "nota": "REVALIDA 2026"
+        }
+      ]
+    },
+    {
+      "id": "u15",
+      "nombre": "Serie U15",
+      "rango_edades": "Años: 2011 y 2012",
+      "jugadores": [
+        {
+          "n": 1,
+          "apellidos": "SEGUEL RODRIGUEZ",
+          "nombres": "ROBERTO CARLOS",
+          "nombre": "ROBERTO CARLOS SEGUEL RODRIGUEZ",
+          "rut": "23.528.506-1",
+          "rut_normalizado": "235285061",
+          "rut_valido": true,
+          "fecha_nac": "2011-01-06",
+          "clasificacion": "U 15",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 2,
+          "apellidos": "PALMA NAVARRO",
+          "nombres": "BENJAMIN ALONSO",
+          "nombre": "BENJAMIN ALONSO PALMA NAVARRO",
+          "rut": "23.558.555-3",
+          "rut_normalizado": "235585553",
+          "rut_valido": true,
+          "fecha_nac": "2011-02-10",
+          "clasificacion": "U 15",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 3,
+          "apellidos": "ASCENCIO PEREZ",
+          "nombres": "SEBASTIAN ANDRES",
+          "nombre": "SEBASTIAN ANDRES ASCENCIO PEREZ",
+          "rut": "23.562.312-9",
+          "rut_normalizado": "235623129",
+          "rut_valido": true,
+          "fecha_nac": "2011-02-17",
+          "clasificacion": "U 15",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 4,
+          "apellidos": "MARIN QUEZADA",
+          "nombres": "PAOLO WLADIMIR",
+          "nombre": "PAOLO WLADIMIR MARIN QUEZADA",
+          "rut": "23.569.513-8",
+          "rut_normalizado": "235695138",
+          "rut_valido": true,
+          "fecha_nac": "2011-02-22",
+          "clasificacion": "U 15",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 5,
+          "apellidos": "REHL MACAYA",
+          "nombres": "MAXIMILIANO",
+          "nombre": "MAXIMILIANO REHL MACAYA",
+          "rut": "23.610.064-2",
+          "rut_normalizado": "236100642",
+          "rut_valido": true,
+          "fecha_nac": "2011-03-30",
+          "clasificacion": "U 15",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 6,
+          "apellidos": "CALDERON CORNEJO",
+          "nombres": "GASPAR FRANCISCO",
+          "nombre": "GASPAR FRANCISCO CALDERON CORNEJO",
+          "rut": "23.569.298-5",
+          "rut_normalizado": "235692985",
+          "rut_valido": false,
+          "fecha_nac": "2011-03-18",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT INVALIDO"
+          ]
+        },
+        {
+          "n": 7,
+          "apellidos": "OYARCE VILLANUEVA",
+          "nombres": "JOAQUIN ANDRES",
+          "nombre": "JOAQUIN ANDRES OYARCE VILLANUEVA",
+          "rut": "23.640.002-6",
+          "rut_normalizado": "236400026",
+          "rut_valido": false,
+          "fecha_nac": "2011-05-05",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT NO ENCONTRADO"
+          ]
+        },
+        {
+          "n": 8,
+          "apellidos": "RODRIGUEZ JEREZ",
+          "nombres": "BASTIAN GONZALO",
+          "nombre": "BASTIAN GONZALO RODRIGUEZ JEREZ",
+          "rut": "23.651.752-7",
+          "rut_normalizado": "236517527",
+          "rut_valido": true,
+          "fecha_nac": "2011-05-25",
+          "clasificacion": "U 15",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 9,
+          "apellidos": "BRAVO FERNANDEZ",
+          "nombres": "MARTIN ANDRES",
+          "nombre": "MARTIN ANDRES BRAVO FERNANDEZ",
+          "rut": "23.713.246-7",
+          "rut_normalizado": "237132467",
+          "rut_valido": true,
+          "fecha_nac": "2011-08-07",
+          "clasificacion": "U 15",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 10,
+          "apellidos": "PAREDES OJEDA",
+          "nombres": "FRANCO ALONSO",
+          "nombre": "FRANCO ALONSO PAREDES OJEDA",
+          "rut": "23.726.685-4",
+          "rut_normalizado": "237266854",
+          "rut_valido": false,
+          "fecha_nac": "2011-08-24",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT NO ENCONTRADO"
+          ]
+        },
+        {
+          "n": 11,
+          "apellidos": "GONZALES BREVIL",
+          "nombres": "JOAQUIN EMILIO",
+          "nombre": "JOAQUIN EMILIO GONZALES BREVIL",
+          "rut": "23.748.723-0",
+          "rut_normalizado": "237487230",
+          "rut_valido": true,
+          "fecha_nac": "2011-09-20",
+          "clasificacion": "U 15",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 12,
+          "apellidos": "PAREDES URIBE",
+          "nombres": "ANGEL CRISTOBAL",
+          "nombre": "ANGEL CRISTOBAL PAREDES URIBE",
+          "rut": "23.760.501-2",
+          "rut_normalizado": "237605012",
+          "rut_valido": false,
+          "fecha_nac": "2011-10-04",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT NO ENCONTRADO"
+          ]
+        },
+        {
+          "n": 13,
+          "apellidos": "GOMEZ CATALAN",
+          "nombres": "IGNACIO ANDRES",
+          "nombre": "IGNACIO ANDRES GOMEZ CATALAN",
+          "rut": "23.819.516-0",
+          "rut_normalizado": "238195160",
+          "rut_valido": true,
+          "fecha_nac": "2011-12-10",
+          "clasificacion": "U 15",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 14,
+          "apellidos": "MUÑOZ NAVARRO",
+          "nombres": "FRANCO NICOLAS",
+          "nombre": "FRANCO NICOLAS MUÑOZ NAVARRO",
+          "rut": "23.867.102-7",
+          "rut_normalizado": "238671027",
+          "rut_valido": true,
+          "fecha_nac": "2012-02-10",
+          "clasificacion": "U 13",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 15,
+          "apellidos": "DIAZ SEPULVEDA",
+          "nombres": "CRISTOBAL ANDRES",
+          "nombre": "CRISTOBAL ANDRES DIAZ SEPULVEDA",
+          "rut": "23.915.413-1",
+          "rut_normalizado": "239154131",
+          "rut_valido": false,
+          "fecha_nac": "2012-04-02",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT NO ENCONTRADO"
+          ]
+        },
+        {
+          "n": 16,
+          "apellidos": "PEREZ QUIJADA",
+          "nombres": "JORGE ANDRES",
+          "nombre": "JORGE ANDRES PEREZ QUIJADA",
+          "rut": "23.969.494-2",
+          "rut_normalizado": "239694942",
+          "rut_valido": true,
+          "fecha_nac": "2012-06-04",
+          "clasificacion": "",
+          "club": "PAILLACO",
+          "avisos": []
+        },
+        {
+          "n": 17,
+          "apellidos": "RIVERA CASTRO",
+          "nombres": "RODRIGO JESUS",
+          "nombre": "RODRIGO JESUS RIVERA CASTRO",
+          "rut": "24.045.733-4",
+          "rut_normalizado": "240457334",
+          "rut_valido": false,
+          "fecha_nac": "2012-08-23",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT NO ENCONTRADO"
+          ]
+        },
+        {
+          "n": 18,
+          "apellidos": "SAN MARTIN GALLARDO",
+          "nombres": "NICOLAS MAXIMILIANO",
+          "nombre": "NICOLAS MAXIMILIANO SAN MARTIN GALLARDO",
+          "rut": "24.059.345-9",
+          "rut_normalizado": "240593459",
+          "rut_valido": false,
+          "fecha_nac": "2012-09-03",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT NO ENCONTRADO"
+          ]
+        },
+        {
+          "n": 19,
+          "apellidos": "ROSALEZ VALDES",
+          "nombres": "JULIAN EMILIO",
+          "nombre": "JULIAN EMILIO ROSALEZ VALDES",
+          "rut": "24.073.608-K",
+          "rut_normalizado": "24073608K",
+          "rut_valido": true,
+          "fecha_nac": "2012-09-25",
+          "clasificacion": "",
+          "club": "PAILLACO",
+          "avisos": []
+        },
+        {
+          "n": 20,
+          "apellidos": "CORNIVELL AZUAJE",
+          "nombres": "CESAR ANDRES",
+          "nombre": "CESAR ANDRES CORNIVELL AZUAJE",
+          "rut": "28.440.739-3",
+          "rut_normalizado": "284407393",
+          "rut_valido": true,
+          "fecha_nac": "2012-04-21",
+          "clasificacion": "",
+          "club": "",
+          "avisos": []
+        }
+      ],
+      "cuerpo_tecnico": [
+        {
+          "rol": "Entrenador",
+          "nombre": "CLAUDIO ANDRES SALAZAR RUIZ",
+          "rut": "13.846.558-6",
+          "rut_valido": true,
+          "nivel": "2",
+          "nota": "REVALIDA 2026"
+        },
+        {
+          "rol": "Asistente 1",
+          "nombre": "MATIAS EMILIANO CONTRERAS",
+          "rut": "44.516.314-7",
+          "rut_valido": true,
+          "nivel": "2",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "u13",
+      "nombre": "Serie U13",
+      "rango_edades": "Años: 2013, 2014 y 2015",
+      "jugadores": [
+        {
+          "n": 1,
+          "apellidos": "AREDEZ AMOR",
+          "nombres": "CRISTOBAL IGNACIO",
+          "nombre": "CRISTOBAL IGNACIO AREDEZ AMOR",
+          "rut": "24.169.903-K",
+          "rut_normalizado": "24169903K",
+          "rut_valido": true,
+          "fecha_nac": "2013-01-14",
+          "clasificacion": "U 13",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 2,
+          "apellidos": "SANTIBAÑEZ SEPULVEDA",
+          "nombres": "DARIEL LEONIDAS",
+          "nombre": "DARIEL LEONIDAS SANTIBAÑEZ SEPULVEDA",
+          "rut": "24.229.926-4",
+          "rut_normalizado": "242299264",
+          "rut_valido": true,
+          "fecha_nac": "2013-03-25",
+          "clasificacion": "U 13",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 3,
+          "apellidos": "ARANGO SOLIS",
+          "nombres": "MARTIN ALEJANDRO",
+          "nombre": "MARTIN ALEJANDRO ARANGO SOLIS",
+          "rut": "24.252.009-2",
+          "rut_normalizado": "242520092",
+          "rut_valido": true,
+          "fecha_nac": "2013-04-22",
+          "clasificacion": "U 13",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 4,
+          "apellidos": "VEGA PADILLA",
+          "nombres": "RODRIGO VICENTE",
+          "nombre": "RODRIGO VICENTE VEGA PADILLA",
+          "rut": "24.340.805-9",
+          "rut_normalizado": "243408059",
+          "rut_valido": false,
+          "fecha_nac": "2013-07-19",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT NO ENCONTRADO"
+          ]
+        },
+        {
+          "n": 5,
+          "apellidos": "WAGENKNECHT VALENZUELA",
+          "nombres": "BRAULIO ANDRES",
+          "nombre": "BRAULIO ANDRES WAGENKNECHT VALENZUELA",
+          "rut": "24.370.116-3",
+          "rut_normalizado": "243701163",
+          "rut_valido": true,
+          "fecha_nac": "2013-07-21",
+          "clasificacion": "U 13",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 6,
+          "apellidos": "MORAGA OYARZUN",
+          "nombres": "GERARDO ALEXIS",
+          "nombre": "GERARDO ALEXIS MORAGA OYARZUN",
+          "rut": "24.364.297-3",
+          "rut_normalizado": "243642973",
+          "rut_valido": true,
+          "fecha_nac": "2013-08-14",
+          "clasificacion": "U 13",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 7,
+          "apellidos": "JARA GATICA",
+          "nombres": "VICENTE MAURICIO",
+          "nombre": "VICENTE MAURICIO JARA GATICA",
+          "rut": "24.502.287-5",
+          "rut_normalizado": "245022875",
+          "rut_valido": false,
+          "fecha_nac": "2014-01-07",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT NO ENCONTRADO"
+          ]
+        },
+        {
+          "n": 8,
+          "apellidos": "ANGULO PERALTA",
+          "nombres": "GASPAR EDUARDO",
+          "nombre": "GASPAR EDUARDO ANGULO PERALTA",
+          "rut": "24.954.769-7",
+          "rut_normalizado": "249547697",
+          "rut_valido": true,
+          "fecha_nac": "2015-04-13",
+          "clasificacion": "U 13",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 9,
+          "apellidos": "COLLAO CONTRERAS",
+          "nombres": "MATEO FERNANDO",
+          "nombre": "MATEO FERNANDO COLLAO CONTRERAS",
+          "rut": "24.611.746-2",
+          "rut_normalizado": "246117462",
+          "rut_valido": false,
+          "fecha_nac": "2014-05-01",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT NO ENCONTRADO"
+          ]
+        },
+        {
+          "n": 10,
+          "apellidos": "FERRON LARRAÑAGA",
+          "nombres": "AUGUSTO ANDRES",
+          "nombre": "AUGUSTO ANDRES FERRON LARRAÑAGA",
+          "rut": "24.639.512-8",
+          "rut_normalizado": "246395128",
+          "rut_valido": true,
+          "fecha_nac": "2014-06-04",
+          "clasificacion": "U 13",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 11,
+          "apellidos": "QUEZADA DONOSO",
+          "nombres": "MATEO ANDRES",
+          "nombre": "MATEO ANDRES QUEZADA DONOSO",
+          "rut": "24.690.809-5",
+          "rut_normalizado": "246908095",
+          "rut_valido": false,
+          "fecha_nac": "2014-07-23",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "El archivo fuente marca: RUT NO ENCONTRADO"
+          ]
+        },
+        {
+          "n": 12,
+          "apellidos": "SANTIBAÑEZ SEPULVEDA",
+          "nombres": "THOMAS IGNACIO",
+          "nombre": "THOMAS IGNACIO SANTIBAÑEZ SEPULVEDA",
+          "rut": "24.886.803-1",
+          "rut_normalizado": "248868031",
+          "rut_valido": true,
+          "fecha_nac": "2015-02-01",
+          "clasificacion": "U 13",
+          "club": "Esc. Alemana Paillaco",
+          "avisos": []
+        },
+        {
+          "n": 13,
+          "apellidos": "VERGARA RIVERA",
+          "nombres": "LEON EMILIO",
+          "nombre": "LEON EMILIO VERGARA RIVERA",
+          "rut": "24.508.323-8",
+          "rut_normalizado": "245083238",
+          "rut_valido": true,
+          "fecha_nac": "2014-01-09",
+          "clasificacion": "",
+          "club": "",
+          "avisos": []
+        },
+        {
+          "n": 14,
+          "apellidos": "MARQUEZ BASCUR",
+          "nombres": "SEBASTIAN",
+          "nombre": "SEBASTIAN MARQUEZ BASCUR",
+          "rut": "24.560.375-4",
+          "rut_normalizado": "245603754",
+          "rut_valido": true,
+          "fecha_nac": "2014-03-06",
+          "clasificacion": "",
+          "club": "",
+          "avisos": []
+        },
+        {
+          "n": 15,
+          "apellidos": "SAEZ ORTIZ",
+          "nombres": "VICENTE",
+          "nombre": "VICENTE SAEZ ORTIZ",
+          "rut": "25.188.135-7",
+          "rut_normalizado": "251881357",
+          "rut_valido": false,
+          "fecha_nac": "2015-11-14",
+          "clasificacion": "",
+          "club": "",
+          "avisos": [
+            "RUT con dígito verificador inválido"
+          ]
+        },
+        {
+          "n": 16,
+          "apellidos": "MORA GATICA",
+          "nombres": "MATIAS SEBASTIAN",
+          "nombre": "MATIAS SEBASTIAN MORA GATICA",
+          "rut": "24.555.388-9",
+          "rut_normalizado": "245553889",
+          "rut_valido": true,
+          "fecha_nac": "2014-02-28",
+          "clasificacion": "",
+          "club": "",
+          "avisos": []
+        }
+      ],
+      "cuerpo_tecnico": [
+        {
+          "rol": "Entrenador",
+          "nombre": "CLAUDIO ANDRES SALAZAR RUIZ",
+          "rut": "13.846.558-6",
+          "rut_valido": true,
+          "nivel": "2",
+          "nota": "REVALIDA 2026"
+        },
+        {
+          "rol": "Asistente 1",
+          "nombre": "MATIAS EMILIANO CONTRERAS",
+          "rut": "44.516.314-7",
+          "rut_valido": true,
+          "nivel": "2",
+          "nota": ""
+        }
+      ]
+    }
+  ],
+  "staff_adicional": []
+}
